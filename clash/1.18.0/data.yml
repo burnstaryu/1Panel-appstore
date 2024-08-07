@@ -1,0 +1,26 @@
+additionalProperties:
+  formFields:
+    - default: 7890
+      edit: true
+      envKey: PROXY_HTTP
+      labelEn: http Port
+      labelZh: http 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: 7891
+      edit: true
+      envKey: PROXY_SOCK
+      labelEn: sock Port
+      labelZh: sock 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: 9090
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Dashboard Port
+      labelZh: Dashboard 端口
+      required: true
+      rule: paramPort
+      type: number

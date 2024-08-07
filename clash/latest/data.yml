@@ -1,0 +1,26 @@
+additionalProperties:
+  formFields:
+    - default: 7890
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: http/https Port
+      labelZh: http/https 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: 7891
+      edit: true
+      envKey: PANEL_APP_PORT_SOCK
+      labelEn: socks5 Port
+      labelZh: socks5 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: 8080
+      edit: true
+      envKey: PANEL_APP_PORT_WEB
+      labelEn: Dashboard Port
+      labelZh: Dashboard 端口
+      required: true
+      rule: paramPort
+      type: number

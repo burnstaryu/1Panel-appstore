@@ -1,0 +1,18 @@
+services:
+  clash:
+    image: dreamacro/clash:v1.18.0
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    networks:
+      - 1panel-network
+    ports:
+      - "${PROXY_HTTP}:7890"
+      - "${PROXY_SOCK}:7891"
+      - "${PANEL_APP_PORT_HTTP}:9090"
+    volumes:
+      - ./data:/root/.config/clash
+    labels:
+      createdBy: "Apps"
+networks:
+  1panel-network:
+    external: true

@@ -1,0 +1,18 @@
+services:
+  clash:
+    image: laoyutang/clash-and-dashboard:latest
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    networks:
+      - 1panel-network
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:7890"
+      - "${PANEL_APP_PORT_SOCK}:7891"
+      - "${PANEL_APP_PORT_WEB}:8080"
+    volumes:
+      - ./data:/root/.config/clash
+    labels:
+      createdBy: "Apps"
+networks:
+  1panel-network:
+    external: true
