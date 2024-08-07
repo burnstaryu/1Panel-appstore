@@ -1,6 +1,6 @@
 additionalProperties:
-  key:    #应用的 key ，仅限英文，用于在 Linux 创建文件夹
-  name:   #应用名称
+  key:    clash #应用的 key ，仅限英文，用于在 Linux 创建文件夹
+  name:   clash #应用名称
   tags:
     - Tool #应用标签，可以有多个，请参照下方的标签列表
   shortDescZh:  #应用中文描述，不要超过30个字
